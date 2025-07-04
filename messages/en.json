@@ -1,0 +1,67 @@
+{
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "title": "Something went wrong!"
+  },
+  "IndexPage": {
+    "description": "This is a basic example that demonstrates the usage of <code>next-intl</code> with the Next.js App Router. Try changing the locale in the top right corner and see how the content changes.",
+    "title": "David Meloyan"
+  },
+  "LocaleLayout": {
+    "title": "David Meloyan"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, hy {Հայերեն} en {English} ru {Русский} other {Unknown}}"
+  },
+  "Manifest": {
+    "name": "David Meloyan"
+  },
+  "Navigation": {
+    "myName": "David Meloyan",
+    "home": "Home",
+    "pathnames": "Pathnames",
+    "contacts": "Contacts",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "NotFoundPage": {
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "title": "Page not found"
+  },
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "description": "Learn more about next-intl in the official docs.",
+        "href": "https://next-intl.dev",
+        "title": "Docs"
+      },
+      "source": {
+        "description": "Browse the source code of this example on GitHub.",
+        "href": "https://github.com/amannn/next-intl/tree/main/examples/syntax-academy",
+        "title": "Source code"
+      }
+    }
+  },
+  "PathnamesPage": {
+    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to Armenian or Russian, the URL is localized accordingly (<code>/hy/pathnames</code> or <code>/ru/pathnames</code>).</p>",
+    "title": "Pathnames"
+  },
+  "ThemeToggle": {
+    "toggle": "Switch to {theme} mode"
+  },
+  "Loader": {
+    "loading": "Loading"
+  },
+  "About": {
+    "title": "About me",
+    "description": "I started my software journey from photography. Through that, I learned to love the process of creating from scratch. Since then, this has led me to software development as it fulfills my love for learning and building things.",
+    "webDev": "Website Development",
+    "botDev": "Bot Development",
+    "hosting": "Website Hosting",
+    "projects": "Completed Projects",
+    "satisfaction": "Client satisfaction",
+    "experience": "Years of experience",
+    "projectsTitle": "Projects"
+  }
+}

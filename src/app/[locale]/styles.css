@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --bg-primary: transparent;
+        --bg: #fca093;
+        --text-primary: #000000;
+        --button-bg: #5fc3e7;
+        --button-text: #ffffff;
+        --nav-bg: #d2857a; /* ✨ Հեռացվել է գույնը */
+        --nav-text: #ffffff;
+        --code-bg: #f1f5f9;
+        --code-text: #000000;
+        --gradient-from: #f8fafc;
+        --gradient-via: #FF715A;
+        --gradient-via-o: #FF715A;
+        --gradient-via-line: #ff2e2e;
+        --select-bg: #ffffff;
+        --select-text: #000000;
+        --select-arrow: #000000;
+        --about-text: #462e2e;
+    }
+
+    .dark {
+        --bg-primary: transparent;
+        --bg: #121a2a;
+        --text-primary: #ffffff;
+        --button-bg: #FF715A;
+        --button-text: #ffffff;
+        --nav-bg: #16213c; /* ✨ Թափանցիկ dark mode-ի համար էլ */
+        --nav-text: #ffffff;
+        --code-bg: #2d3748;
+        --code-text: #5fc3e7;
+        --gradient-from: hsl(222deg 47% 10%);
+        --gradient-via: #396d93;
+        --gradient-via-o: #121a2a;
+        --gradient-via-line: #FF715A;
+        --select-bg: hsl(222deg 47% 10%);
+        --select-text: #ffffff;
+        --select-arrow: #5fc3e7;
+        --about-text: #ffffff;
+
+    }
+
+    body {
+        @apply bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300;
+    }
+
+    nav {
+        @apply text-[var(--nav-text)] transition-colors duration-300;
+    }
+
+    code {
+        @apply bg-[var(--code-bg)] text-[var(--code-text)] px-1 py-0.5 rounded transition-colors duration-300;
+    }
+
+    .page-layout {
+        @apply bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300;
+    }
+
+    select {
+        @apply bg-[var(--select-bg)] text-[var(--select-text)] border border-[var(--select-text)] rounded-md transition-colors duration-300;
+    }
+}
