@@ -1,8 +1,8 @@
 'use client';
 import { useTheme } from 'next-themes';
-import { useState, useEffect } from 'react';
-import { FiSun, FiMoon } from 'react-icons/fi';
+import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import {BsFillMoonStarsFill, BsFillSunFill} from "react-icons/bs";
 
 export default function ThemeToggle() {
     const [mounted, setMounted] = useState(false);
@@ -16,10 +16,10 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="p-[10px] rounded-md bg-[var(--nav-bg)] text-[var(--header-text)] hover:bg-opacity-80 transition"
+            className="text-2xl ml-4"
             aria-label={t('toggle', { theme: theme === 'dark' ? 'light' : 'dark' })}
         >
-            {theme === 'dark' ? <FiSun size={20} /> : <FiMoon size={20} />}
+            {theme !== 'dark' ? <BsFillSunFill className={'hover:text-purple-500 duration-500'}/> : <BsFillMoonStarsFill className={'hover:text-purple-500 duration-500'}/>}
         </button>
     );
 }

@@ -1,8 +1,10 @@
 import {Locale} from 'next-intl';
 import {setRequestLocale} from 'next-intl/server';
 import {use} from 'react';
-import PageLayout from '@/components/PageLayout';
-import AboutSection from "@/components/AboutSection";
+import Hero from "@/components/Hero";
+import Courses from "@/components/Courses";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Reports from "@/components/Reports";
 
 type Props = {
     params: Promise<{ locale: Locale }>;
@@ -15,8 +17,11 @@ export default function IndexPage({params}: Props) {
 
 
     return (
-        <PageLayout title={' '}>
-            <AboutSection/>
-        </PageLayout>
+       <>
+           <Hero/>
+           <Courses/>
+           <WhyChooseUs/>
+           <Reports/>
+       </>
     );
 }

@@ -41,9 +41,9 @@ export default function LocaleSwitcherSelect({
               isPending && 'transition-opacity [&:disabled]:opacity-30'
           )}
       >
-        <p className="sr-only">{label}</p>
+        <p className="sr-only hover:text-purple-500 duration-500">{label}</p>
         <select
-            className={clsx('inline-flex border-none bg-[var(--nav-bg)] text-[var(--nav-text)] outline-none  text-base appearance-none py-2 px-3 ')}
+            className="p-1 rounded border dark:border-gray-600 dark:bg-gray-800 dark:text-white cursor-pointer"
             defaultValue={defaultValue}
             disabled={isPending}
             onChange={onSelectChange}
