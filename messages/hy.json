@@ -77,5 +77,18 @@
     "newsletter": "Նորություններ",
     "follow": "Հետևիր մեզ",
     "rights": "© 2025 SyntaxAcademy։ Բոլոր իրավունքները պաշտպանված են։"
+  },
+  "auth": {
+    "registerTitle": "Ստեղծեք ձեր SyntaxAcademy հաշիվը",
+    "email": "Էլ. հասցե",
+    "password": "Գաղտնաբառ",
+    "confirmPassword": "Կրկնեք գաղտնաբառը",
+    "register": "Գրանցվել",
+    "haveAccount": "Արդեն հաշիվ ունե՞ք",
+    "login": "Մուտք գործեք այստեղ",
+    "signIn": "Մուտք",
+    "loginTitle": "Մուտք գործեք ձեր SyntaxAcademy հաշիվը",
+    "noAccount": "Չունե՞ք հաշիվ",
+    "createAccount": "Ստեղծեք այստեղ"
   }
 }

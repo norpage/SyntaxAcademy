@@ -77,5 +77,18 @@
     "newsletter": "Новости",
     "follow": "Подписывайтесь",
     "rights": "© 2025 SyntaxAcademy. Все права защищены."
+  },
+  "auth": {
+    "registerTitle": "Создайте свой аккаунт SyntaxAcademy",
+    "email": "Электронная почта",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "register": "Зарегистрироваться",
+    "haveAccount": "Уже есть аккаунт?",
+    "login": "Войдите здесь",
+    "signIn": "Вход",
+    "loginTitle": "Войдите в свой аккаунт SyntaxAcademy",
+    "noAccount": "Нет аккаунта?",
+    "createAccount": "Создайте здесь"
   }
 }

@@ -24,7 +24,7 @@ const Header = () => {
 
     return (
         <header
-            className={`flex justify-between sticky top-0 items-center px-6 py-4 border-b dark:border-gray-700 transition backdrop-blur-lg ${
+            className={`flex justify-between z-[1000] sticky top-0 items-center px-6 py-4 border-b dark:border-gray-700 transition backdrop-blur-lg ${
                 isScrolled ? "bg-white/30 dark:bg-gray-900/30" : "bg-transparent"
             }`}
         >
@@ -39,6 +39,13 @@ const Header = () => {
                 <Link href="#contact" className="py-2 hover:text-purple-500 duration-500" onClick={() => setMenuOpen(false)}>{t('nav.contact')}</Link>
                 <LocaleSwitcher />
                 <ThemeToggle />
+                <Link
+                    href="/login"
+                    onClick={() => setMenuOpen(false)}
+                    className="px-4 py-2 text-nowrap bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg shadow-md hover:from-purple-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all duration-300"
+                >
+                    {t('auth.signIn')}
+                </Link>
             </nav>
             <div className="md:hidden flex items-center gap-4">
                 <button onClick={() => setMenuOpen(!menuOpen)}><FaBars /></button>
@@ -54,6 +61,13 @@ const Header = () => {
                     <div className="py-2">
                         <LocaleSwitcher />
                     </div>
+                    <Link
+                        href="/login"
+                        onClick={() => setMenuOpen(false)}
+                        className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg shadow-md hover:from-purple-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all duration-300"
+                    >
+                        {t('auth.signIn')}
+                    </Link>
                 </div>
             )}
         </header>

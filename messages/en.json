@@ -79,5 +79,18 @@
     "newsletter": "Newsletter",
     "follow": "Follow Us",
     "rights": "© 2025 SyntaxAcademy. All rights reserved."
+  },
+  "auth": {
+    "registerTitle": "Create your SyntaxAcademy account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "register": "Register",
+    "haveAccount": "Already have an account?",
+    "login": "Login here",
+    "signIn": "Sign In",
+    "loginTitle": "Login to your SyntaxAcademy account",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create one here"
   }
 }
