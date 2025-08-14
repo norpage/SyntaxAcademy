@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import NavigationLink from "@/components/NavigationLink";
 
 const Hero = () => {
     const t = useTranslations();
@@ -28,11 +28,11 @@ const Hero = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">{displayText}
                 <span className="text-yellow-300 blinking-cursor">|</span>
             </h2>
-            <Link
-                href={'/login'}
+            <NavigationLink
+                href={'/register'}
                 className="mt-6 max-w-[300px] px-6 py-3 text-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded hover:opacity-90 transition">
                 {t('hero.start')}
-            </Link>
+            </NavigationLink>
         </section>
     );
 };

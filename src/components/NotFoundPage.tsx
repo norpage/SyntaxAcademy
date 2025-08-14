@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import Link from "next/link";
+import NavigationLink from "@/components/NavigationLink";
 
 export default function NotFoundPage() {
 
@@ -27,12 +27,12 @@ export default function NotFoundPage() {
             </div>
 
             {/* CTA Button */}
-            <Link
+            <NavigationLink
                 href="/"
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-6 py-3 rounded-xl font-semibold shadow-lg transition"
             >
                 Go Back Home
-            </Link>
+            </NavigationLink>
 
             {/* Illustration */}
             <div className="mt-12 w-64  animate-bounce">

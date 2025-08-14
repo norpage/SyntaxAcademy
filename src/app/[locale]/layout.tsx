@@ -4,49 +4,50 @@ import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {ReactNode} from 'react';
 import {routing} from '@/i18n/routing';
 import './styles.css';
-import {Providers} from "@/app/providers";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import {Providers} from '@/app/providers';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 type Props = {
-    children: ReactNode;
-    params: Promise<{ locale: Locale }>;
+  children: ReactNode;
+  params: Promise<{locale: Locale}>;
 };
 
 export function generateStaticParams() {
-    return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({locale}));
 }
 
 export async function generateMetadata(props: Omit<Props, 'children'>) {
-    const {locale} = await props.params;
-    const t = await getTranslations({locale, namespace: 'LocaleLayout'});
-    return {
-        title: t('title'),
-    };
+  const {locale} = await props.params;
+  const t = await getTranslations({locale, namespace: 'LocaleLayout'});
+  return {
+    title: t('title')
+  };
 }
 
 export default async function LocaleLayout({
-                                               children,
-                                               params
+                                             children,
+                                             params
                                            }: Props) {
-    const {locale} = await params;
-    if (!hasLocale(routing.locales, locale)) {
-        notFound();
-    }
+  const {locale} = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
-    setRequestLocale(locale);
+  setRequestLocale(locale);
 
-    return (
-        <html className="h-full" lang={locale} suppressHydrationWarning>
-        <body className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white font-mono">
-        <Providers>
-            <NextIntlClientProvider>
-                <Header/>
-                {children}
-                <Footer/>
-            </NextIntlClientProvider>
-        </Providers>
-        </body>
-        </html>
-    );
+  return (
+    <html className="h-full" lang={locale} suppressHydrationWarning>
+    <body className="min-h-screen overflow-x-hidden bg-white text-gray-900 dark:bg-gray-900 dark:text-white font-mono">
+
+    <NextIntlClientProvider>
+      <Providers>
+        <Header />
+        {children}
+        <Footer />
+      </Providers>
+    </NextIntlClientProvider>
+    </body>
+    </html>
+  );
 }

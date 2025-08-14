@@ -1,10 +1,9 @@
-// src/components/NavigationLink.tsx
 'use client';
 
 import clsx from 'clsx';
 import { useSelectedLayoutSegment, useParams } from 'next/navigation';
 import { ReactNode } from 'react';
-import { Link } from '@/i18n/navigation'; // custom Link component
+import { Link } from '@/i18n/navigation';
 import { UrlObject } from 'url';
 
 interface NavigationLinkProps {
@@ -36,10 +35,10 @@ export default function NavigationLink({
             aria-current={isActive ? 'page' : undefined}
             className={clsx(
                 'inline-block px-2 py-3 transition-colors',
-                isActive ? 'text-white' : 'text-gray-400 hover:text-gray-500 dark:hover:text-gray-200',
+                isActive ? 'text-gray-800 dark:text-white' : 'text-gray-400 hover:text-gray-500 dark:hover:text-gray-200',
                 className
             )}
-            href={href as any} // <- bypass type error
+            href={href as any}
             {...rest}
         >
             {children}

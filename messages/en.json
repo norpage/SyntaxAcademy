@@ -17,7 +17,6 @@
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
     "title": "Page not found"
   },
-
   "Loader": {
     "loading": "Loading"
   },
@@ -28,7 +27,9 @@
     "courses": "Courses",
     "why": "Why Us",
     "testimonials": "Testimonials",
-    "contact": "Contact"
+    "contact": "Contact",
+    "myPage": "My Page",
+    "dashboard": "Dashboard"
   },
   "hero": {
     "title": "Learn to Code. Launch Your Career.",
@@ -53,7 +54,6 @@
       "desc": "Build dynamic user interfaces."
     }
   },
-
   "why": {
     "points": {
       "0": "Great instructors",
@@ -78,7 +78,12 @@
     "contact": "Contact",
     "newsletter": "Newsletter",
     "follow": "Follow Us",
-    "rights": "© 2025 SyntaxAcademy. All rights reserved."
+    "rights": "© 2025 SyntaxAcademy. All rights reserved.",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "success": "Thank you! You have successfully subscribed.",
+    "error": "An error occurred. Please try again.",
+    "emailPlaceholder": "Your email"
   },
   "auth": {
     "registerTitle": "Create your SyntaxAcademy account",
@@ -91,6 +96,36 @@
     "signIn": "Sign In",
     "loginTitle": "Login to your SyntaxAcademy account",
     "noAccount": "Don't have an account?",
-    "createAccount": "Create one here"
+    "createAccount": "Create one here",
+    "name": "Name",
+    "namePlaceholder": "John Doe",
+    "age": "Age",
+    "agePlaceholder": "25",
+    "request": "Check your Email please!",
+    "forgotPassword": "Forgot Password?",
+    "resetTitle": "Reset Your Password",
+    "sendResetCode": "Send Reset Code",
+    "backToLogin": "Remember your password?",
+    "setNewPassword": "Set New Password",
+    "signOut": "Sign Out",
+    "rememberPassword": "Remember Password",
+    "requestSent": "Request Sent To Your Mail Successfully",
+    "redirecting": "Password reset successful. Redirecting To Sign In..."
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "ageNumber": "Age must be a number",
+    "ageMin": "Invalid age",
+    "ageMax": "Invalid age",
+    "ageRequired": "Age is required",
+    "emailFormat": "Invalid email format",
+    "emailRequired": "Email is required",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordUppercase": "Password must contain at least one uppercase letter",
+    "passwordNumber": "Password must contain at least one number",
+    "passwordSpecial": "Password must contain at least one special character",
+    "passwordRequired": "Password is required",
+    "confirmPasswordMatch": "Passwords must match",
+    "confirmPasswordRequired": "Confirm password is required"
   }
 }

@@ -16,11 +16,11 @@ const Loader = () => {
     if (!mounted) return null;
 
     return createPortal(
-        <div className="fixed inset-0 z-50 flex  items-center justify-center bg-gradient-to-r from-[var(--gradient-from)] via-[var(--gradient-via)] transition-colors duration-300">
-            <div className="relative w-24 h-24">
+        <div className="fixed inset-0 bg-[#7e7e7e75] backdrop-blur-[2px] z-50 flex  items-center justify-center bg-gradient-to-r from-[var(--gradient-from)] via-[var(--gradient-via)] transition-colors duration-300">
+            <div className="relative blur-0  w-24 h-24">
                 <div className="absolute inset-0 rounded-full border-8 border-t-gray-300 border-b-transparent animate-spin"></div>
                 <div className="absolute inset-4 rounded-full bg-[var(--background)] flex items-center justify-center ">
-                    <span className="text-white font-semibold text-sm tracking-wider">{t('loading')}</span>
+                    <span className="text-white text-[9px] text-nowrap font-semibold text-sm tracking-wider">{t('loading')}...</span>
                 </div>
             </div>
         </div>,

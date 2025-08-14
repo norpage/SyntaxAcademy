@@ -24,7 +24,11 @@
     "courses": "Курсы",
     "why": "Почему мы",
     "testimonials": "Отзывы",
-    "contact": "Контакты"
+    "contact": "Контакты",
+    "myPage": "Моя страница",
+    "dashboard": "Dashboard"
+
+
   },
   "ThemeToggle": {
     "toggle": "Переключиться на {theme} режим"
@@ -74,21 +78,57 @@
   },
   "footer": {
     "contact": "Контакты",
-    "newsletter": "Новости",
-    "follow": "Подписывайтесь",
-    "rights": "© 2025 SyntaxAcademy. Все права защищены."
+    "newsletter": "Новостная рассылка",
+    "follow": "Подписывайтесь на нас",
+    "rights": "© 2025 SyntaxAcademy. Все права защищены.",
+    "subscribe": "Подписаться",
+    "subscribing": "Оформляем подписку...",
+    "success": "Спасибо! Вы успешно подписались.",
+    "error": "Произошла ошибка. Пожалуйста, попробуйте ещё раз.",
+    "emailPlaceholder": "Ваш email"
   },
   "auth": {
     "registerTitle": "Создайте свой аккаунт SyntaxAcademy",
     "email": "Электронная почта",
     "password": "Пароль",
     "confirmPassword": "Подтвердите пароль",
-    "register": "Зарегистрироваться",
+    "register": "Регистрация",
     "haveAccount": "Уже есть аккаунт?",
-    "login": "Войдите здесь",
-    "signIn": "Вход",
+    "login": "Войти здесь",
+    "signIn": "Войти",
     "loginTitle": "Войдите в свой аккаунт SyntaxAcademy",
     "noAccount": "Нет аккаунта?",
-    "createAccount": "Создайте здесь"
+    "createAccount": "Создайте его здесь",
+    "name": "Имя",
+    "namePlaceholder": "Джон Доу",
+    "age": "Возраст",
+    "agePlaceholder": "25",
+    "request": "Проверьте, пожалуйста, свою электронную почту!",
+    "forgotPassword": "Забыли пароль?",
+    "resetTitle": "Сбросьте свой пароль",
+    "sendResetCode": "Отправить код для сброса",
+    "backToLogin": "Вспомнили пароль?",
+    "setNewPassword": "Установите новый пароль",
+    "signOut": "Выйти",
+    "rememberPassword": "Запомнить пароль",
+    "requestSent": "Запрос успешно отправлен на вашу почту",
+    "redirecting": "Сброс пароля пройден успешно. Перенаправление для входа..."
+
+  },
+  "validation": {
+    "nameRequired": "Имя обязательно",
+    "ageNumber": "Возраст должен быть числом",
+    "ageMin": "Неверный возраст",
+    "ageMax": "Неверный возраст",
+    "ageRequired": "Возраст обязателен",
+    "emailFormat": "Неверный формат электронной почты",
+    "emailRequired": "Электронная почта обязательна",
+    "passwordMin": "Пароль должен содержать минимум 8 символов",
+    "passwordUppercase": "Пароль должен содержать хотя бы одну заглавную букву",
+    "passwordNumber": "Пароль должен содержать хотя бы одну цифру",
+    "passwordSpecial": "Пароль должен содержать хотя бы один специальный символ",
+    "passwordRequired": "Пароль обязателен",
+    "confirmPasswordMatch": "Пароли должны совпадать",
+    "confirmPasswordRequired": "Подтверждение пароля обязательно"
   }
 }
